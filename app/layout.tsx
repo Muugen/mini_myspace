@@ -7,12 +7,14 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
-      <body>
-        <NavMenu />
-        {children}
-      </body>
-    </html>
+    <AuthProvider>
+      <html lang="en">
+        <body>
+          <NavMenu />
+          {children}
+        </body>
+      </html>
+    </AuthProvider>
   );
 };
 
