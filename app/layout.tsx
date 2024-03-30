@@ -1,3 +1,4 @@
+import AuthProvider from "./AuthProvider";
 import NavMenu from "./NavMenu";
 import "./globals.css";
 
@@ -10,8 +11,10 @@ const RootLayout = ({
     <AuthProvider>
       <html lang="en">
         <body>
-          <NavMenu />
-          {children}
+          <div className="container">
+            <NavMenu />
+            {children}
+          </div>
         </body>
       </html>
     </AuthProvider>
